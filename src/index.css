@@ -1,0 +1,107 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.car-info {
+  display: flex;
+  flex-direction: row;
+  /* float: left; */
+}
+
+.car-detail {
+  margin-left: 10px;
+  background: #eee;
+  float: right;
+  width: 300px;
+  
+}
+
+.search-box {
+  background: #ddd;
+}
+
+.car-button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.active { font-weight: bold; color: #f00 }
+
+.form-input {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-input:focus, .form-input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn-ok {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn-ok:hover {
+  opacity:1;
+}
+
+.react-search-field-input {
+  border: 1px solid #444;
+}
+
+.react-search-field-button {
+  border: 1px solid #444;
+}

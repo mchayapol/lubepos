@@ -1,0 +1,14 @@
+{
+  "colors" : [
+    { "label": "WHITE", "value": "WHITE" },
+    { "label": "BLACK", "value": "BLACK" },
+    { "label": "PURPLE", "value": "PURPLE" },
+    { "label": "BLUE", "value": "BLUE" },
+    { "label": "NAVY", "value": "NAVY" },
+    { "label": "GREEN", "value": "GREEN" },
+    { "label": "YELLOW", "value": "YELLOW" },
+    { "label": "ORANGE", "value": "ORANGE" },
+    { "label": "RED", "value": "RED" },
+    { "label": "เทา", "value": "GREY" }
+]
+}

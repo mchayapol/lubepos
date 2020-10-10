@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+// Test Firebase File Upload
+// Create a root reference
+
+import firebase from 'firebase/app';
+require("firebase/firestore");
+const firebaseConfig = require('../config.js');
+
+firebase.initializeApp(firebaseConfig);
+
+firebase.firestore().enablePersistence()
+    .catch(function (err) {
+        if (err.code === 'failed-precondition') {
+            console.err(err);
+        } else if (err.code === 'unimplemented') {
+            console.err(err);
+        }
+    });
+
+var storageRef = firebase.storage().ref();
+
+// Create a reference to 'mountains.jpg'
+var mountainsRef = storageRef.child('car01.jpg');
+
+// Create a reference to 'images/mountains.jpg'
+var mountainImagesRef = storageRef.child('images/subaru-impreza.jpg');
+
+// While the file names are the same, the references point to different files
+mountainsRef.name === mountainImagesRef.name            // true
+mountainsRef.fullPath === mountainImagesRef.fullPath    // false
+</script>
+<body>
+    Yo!
+</body>
+</html>
